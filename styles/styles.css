@@ -11,9 +11,9 @@ main img {
 }
 
 aside{
-    /* max-width: 840px; */
+    max-width: 840px;
     width: 100%;
-    margin: 1em;
+    margin: 0em;
     border: 1px solid rgb(0 0 0 / .2);
     padding: 0 1em;
     background-color: rgb(127, 159, 230);
@@ -54,6 +54,7 @@ p {
 }
 
 footer {
+    max-width: 840px;
     margin-top: 8rem;
     border-top: 2px solid #900;
     text-align: center;
