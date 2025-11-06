@@ -1,6 +1,16 @@
+main {
+    max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: .5rem;
+    line-height: .2;
 }
 nav a {
     color: white;
@@ -10,13 +20,46 @@ nav a {
 h1 {
     color: darkblue;
 }
-img {
-    width: 150px;
+img.profile {
+    max-width: 840px;
+    width: 15%;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
+    border: 3px solid #1408b9;
+    padding: .3em ;
     box-shadow: 0 0 30px gray;
 }
+
+img.photo {
+    max-width: 840px;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    border: 2px solid #900;
+    padding: .5em ;
+    box-shadow: 0 0 30px gray;
+    justify-content: center;
+}
+
+aside{
+    max-width: 840px;
+    width: 100%;
+    margin: 1em;
+    border: 1px solid rgb(0 0 0 / .2);
+    padding: 0 1em;
+    background-color: rgb(127, 159, 230);
+    color: #fff;
+    text-align: justify;
+}
+
 p {
-    padding: 10px;
+    max-width: 840px;
+    width: 100%;
+    padding: 0;
+}
+
+footer {
+    margin-top: 8rem;
+    border-top: 2px solid #900;
+    text-align: center;
 }
