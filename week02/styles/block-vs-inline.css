@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 2px;
+    padding: 3px;
 }
 
 body {
@@ -13,11 +13,18 @@ div {
     background-color: beige;
     margin: 1rem;
     padding: 1rem;
+    font-size: larger;
 }
 
 span {
     color: navy;
     background-color: lightblue;
+}
+
+label {
+    color: #d00;
+    background-color: #aaa;
+    font-size: larger;
 }
 
 code {
