@@ -1,6 +1,11 @@
 /* This is the CSS file for my home page */
 /* James Leight */
 
+:root {
+    --border-color: #900;
+    --border-color2: darkblue;
+}
+
 main {
     max-width: 840px;
 }
@@ -8,7 +13,7 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 3px solid #1408b9;
+    border: 3px solid var(--border-color2);
     padding: .3em ;
     box-shadow: 0 0 30px gray;
 }
@@ -29,14 +34,14 @@ aside img{
     margin: auto;
     width: 200px;
     height: auto;
-    border: 2px solid #900;
+    border: 2px solid var(--border-color);
     padding: .5em ;
     box-shadow: 0 0 30px gray;
     justify-content: center;
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--border-color2);
     padding: .5rem;
     line-height: .2;
 }
@@ -46,7 +51,7 @@ nav a {
     padding: 20px;
 }
 h1 {
-    color: darkblue;
+    color: var(--border-color2);
 }
 
 p {
@@ -58,6 +63,6 @@ p {
 footer {
     max-width: 840px;
     margin-top: 8rem;
-    border-top: 2px solid #900;
+    border-top: 2px solid var(--border-color);
     text-align: center;
 }
