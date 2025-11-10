@@ -19,7 +19,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 body section p {
@@ -28,7 +28,7 @@ body section p {
     padding: 10px;
     margin: 10px 0px;
     border-radius: 10px;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
 }
 
 header, main, footer {
@@ -40,7 +40,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 nav, p, section, article {
@@ -71,7 +71,7 @@ footer img {
     padding: 16px;
     text-align: center;
     opacity: 0.6;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: #fff;
 }
 
@@ -89,8 +89,8 @@ footer img {
     padding: 0px;
     text-align: left;
     opacity: 0.8;
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 .hero article img {
