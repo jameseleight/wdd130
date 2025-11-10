@@ -3,10 +3,10 @@
 /* James Leight */
 
 :root {
-    --primary-color: rgb(12, 61, 12);
-    --secondary-color: #eeae38;
-    --accent1-color: rgb(58, 59, 41);
-    --accent2-color: rgb(245, 237, 135);
+    --primary-color: rgb(12, 61, 12); /* Body text for light background */
+    --secondary-color: #eeae38; /* Body text for dark background */
+    --accent1-color: rgb(58, 59, 41); /* Dark Background Color */
+    --accent2-color: rgb(216, 207, 77); /* Light background color */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Ariel, Helvetica, sans-serif;
 }
@@ -19,7 +19,16 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+body section p {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    background-color: var(--accent2-color);
 }
 
 header, main, footer {
@@ -88,4 +97,3 @@ footer img {
     width: 200px;
     padding: 8px;
 }
-
