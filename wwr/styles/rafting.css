@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: rgb(12, 61, 12); /* Dark Background */
-    --secondary-color: #eeae38; /* Light Background */
+    --secondary-color: rgb(238, 174, 56); /* Light Background */
     --accent1-color: rgb(58, 59, 41); /* Dark Body text Color */
     --accent2-color: rgb(216, 207, 77); /* Light Body text Color */
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -29,13 +29,15 @@ body section p {
     margin: 10px 0px;
     border-radius: 10px;
     background-color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 header, main, footer {
     width: 840px;
     margin: 0 auto;
-    /* background-color: var(--primary-color);
-    color: var(--accent2-color); */
+    background-color: #fff;
+    color: black;
+
 }
 
 h1, h2 {
