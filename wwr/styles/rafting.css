@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: rgb(12, 61, 12);
-    --secondary-color: #f4a261;
+    --secondary-color: #eeae38;
     --accent1-color: rgb(58, 59, 41);
     --accent2-color: rgb(245, 237, 135);
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -80,7 +80,7 @@ footer img {
     text-align: left;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .hero article img {
