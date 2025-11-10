@@ -1,0 +1,95 @@
+/* This is the CSS file for the Whitewater Rafting Pages */
+/* WDD 130 W03 */
+/* James Leight */
+
+:root {
+    --primary-color: rgb(12, 61, 12);
+    --secondary-color: #f4a261;
+    --accent1-color: rgb(58, 59, 41);
+    --accent2-color: rgb(245, 237, 135);
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Ariel, Helvetica, sans-serif;
+    /* --border-color: rgb(54, 56, 51 / 10%);
+    --border-color2: rgb(141, 133, 20 / 10%);
+    --text-color: #040; */
+    /* --background-color: rgb(155, 219, 155); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+    /* background-color: var(--primary-color);
+    color: var(--accent2-color); */
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.6;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 4px;
+}
+
+article {
+    position: absolute;
+    margin: 0;
+    top: 410px;
+    width: 100%;
+    padding: 0px;
+    text-align: left;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+footer img {
+    width: 10%;
+    height: auto;
+}
+
+/* Class defintions */
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    padding: 8px;
+}
+
