@@ -59,10 +59,8 @@ aside h2 {
 nav {
     background-color: var(--border-color2);
     padding: .5rem;
-    text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: white;
     line-height: .2;
     display: flex;
     justify-content: space-evenly;
@@ -70,6 +68,7 @@ nav {
 }
 nav a {
     display: block;
+    text-decoration: none;
     color: white;
     padding: .5rem;
 }
