@@ -34,7 +34,6 @@ header {
     border-bottom: 2px var(--secondary-color) dashed;
     width: 840px;
     margin: 0 auto;
-    /* color: var(--accent1-color); */
 }
 
 header nav {
@@ -52,8 +51,8 @@ header img {
 main, footer {
     width: 840px;
     margin: 0 auto;
-    background-color: #fff;
-    color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 h1, h2 {
