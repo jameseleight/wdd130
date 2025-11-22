@@ -118,11 +118,10 @@ footer p {
 
 .hero h1 {
     position: absolute;
-    top: -350px;
+    top: -365px;
     width: 100%;
     padding: 10px;
     text-align: center;
-    opacity: .8;
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
