@@ -118,7 +118,7 @@ footer p {
 
 .hero h1 {
     position: absolute;
-    top: 15px;
+    top: -350px;
     width: 100%;
     padding: 10px;
     text-align: center;
