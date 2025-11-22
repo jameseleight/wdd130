@@ -32,22 +32,78 @@ body section p {
     color: var(--accent1-color);
 }
 
-header, main, footer {
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 2px var(--secondary-color) dashed;
+    width: 840px;
+    margin: 0 auto;
+    /* color: var(--accent1-color); */
+}
+
+header nav {
+    justify-self: center;
+    width: 480px;
+}
+
+header img {
+    margin: 10px;
+    width: 150px;
+    height: auto;
+    justify-self: center;
+}
+
+main, footer {
     width: 840px;
     margin: 0 auto;
     background-color: #fff;
     color: black;
-
 }
 
 h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
+    /* font-family: var(--heading-font); */
+    /* color: var(--accent1-color); */
 }
 
-nav, p, section, article {
+nav {
     margin: 10px;
+    padding: 1px;
+}
+
+article p {
+    margin: 20px;
     padding: 0px;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 0 10px;
+}
+
+section p {
+    padding: 0px;
+}
+
+section img {
+    width: 160px;
+    height: auto;
+    place-self: center;
+}
+
+section h2 {
+    margin: 10px;
+    border: 1px #fff solid;
+    grid-column-start: 2;
+    align-content: center;
+    place-self: center;
 }
 
 footer img {
@@ -72,7 +128,7 @@ footer img {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
+    opacity: .8;
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
@@ -86,7 +142,7 @@ footer img {
 .hero article {
     position: absolute;
     margin: 0;
-    top: 410px;
+    top: 380px;
     width: 100%;
     padding: 0px;
     text-align: left;
@@ -99,4 +155,34 @@ footer img {
     float: right;
     width: 200px;
     padding: 8px;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navlist a {
+    display: block;
+    width: 120px;
+    height: auto;
+    border: 1px var(--secondary-color) solid;
+    border-radius: 2px;
+    margin: 0px;
+    padding: 7px 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.adventure section {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 0 10px;
 }
