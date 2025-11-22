@@ -186,11 +186,13 @@ footer p {
 
 .history p {
     border-radius: 5px;
+    grid-row-start: 2;
 }
 
 .history img {
     width: 210px;
     height: auto;
+    grid-row-start: 2;
     place-self: center;
     border-radius: 5px;
 }
