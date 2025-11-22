@@ -7,7 +7,7 @@
     --secondary-color: rgb(238, 174, 56); /* Light Background */
     --accent1-color: rgb(58, 59, 41); /* Dark Body text Color */
     --accent2-color: rgb(216, 207, 77); /* Light Body text Color */
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", "Georgia", sans-serif;
     --body-font: Ariel, Helvetica, sans-serif;
 }
 
@@ -57,7 +57,7 @@ main, footer {
 }
 
 h1, h2 {
-    font-family: var(--body-font);
+    font-family: var(--heading-font);
     color: var(--accent1-color);
 }
 
@@ -78,65 +78,6 @@ section p {
     margin: 10px 0px;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
-}
-
-.history {
-    display: grid;
-    grid-template-rows: 20px 2fr;
-    grid-template-columns: 2fr 1fr 2fr;
-    align-items: center;
-    justify-items: center;
-    text-align: left;
-    gap: 0 5px;
-    margin: 10px;
-    border-bottom: 2px var(--secondary-color) dashed;
-}
-
-.history p {
-    border-radius: 5px;
-}
-
-.history img {
-    width: 210px;
-    height: auto;
-    place-self: center;
-    border-radius: 5px;
-}
-
-.history h2 {
-    margin: 10px;
-    grid-column-start: 2;
-    place-self: center;
-}
-
-.adventureheader {
-    text-align: center;
-}
-
-.adventure {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: start;
-    justify-items: center;
-    text-align: center;
-    gap: 0 5px;
-    margin: 10px;
-    border-bottom: 2px var(--secondary-color) dashed;
-}
-
-.adventure figure {
-    grid-row-start: 2;
-    align-content: start;
-    color: var(--accent1-color);
-    font-size: 1rem;
-    margin: 0px 0px 10px 0px;
-}
-
-.adventure img {
-    width: 150px;
-    height: auto;
-    place-self: center;
-    border-radius: 5px;
 }
 
 footer {
@@ -228,6 +169,67 @@ footer p {
     font-size: 1.2rem;
     text-align: center;
     text-decoration: none;
+}
+
+.history {
+    display: grid;
+    grid-template-rows: 20px 2fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    gap: 0 5px;
+    margin: 10px;
+    border-bottom: 2px var(--secondary-color) dashed;
+}
+
+.history p {
+    border-radius: 5px;
+}
+
+.history img {
+    width: 210px;
+    height: auto;
+    place-self: center;
+    border-radius: 5px;
+}
+
+.history h2 {
+    margin: 10px;
+    grid-column-start: 2;
+    place-self: center;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    justify-items: center;
+    text-align: center;
+    gap: 5px 5px;
+    margin: 10px;
+    border-bottom: 2px var(--secondary-color) dashed;
+}
+
+.adventure h2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.adventure figure {
+    grid-row-start: 2;
+    align-content: start;
+    color: var(--accent1-color);
+    font-size: 1rem;
+    margin: 0px 0px 10px 0px;
+}
+
+.adventure img {
+    width: 150px;
+    height: auto;
+    place-self: center;
+    border-radius: 5px;
 }
 
 .socialmedia {
