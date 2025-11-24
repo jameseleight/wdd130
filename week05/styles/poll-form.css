@@ -1,0 +1,138 @@
+:root {
+    --text-background: rgb(255, 255, 255); /* white Background */
+    --form-background: rgb(240, 240, 240); /* Light grey Background */
+    --headertext-color: rgb(0, 0, 120); /* Dark/Navy Blue */
+    --border-outer: rgb(230, 230, 230); /* grey border */
+    --border-inner: rgb(190, 190, 190); /* grey inner border */
+    --border-input: rgb(160, 160, 160);
+    --heading-font: Merriweather, Georgia, serif;
+    --body-font: Ariel, Helvetica, sans-serif;
+    --bodytext-color: rgb(60, 60, 60)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 520px;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--headertext-color);
+    font-size: 1.3em;
+    font-weight: 550;
+}
+
+form {
+    width: 520px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-collapse: collapse;
+    border: 1px solid var(--border-outer);
+    border-radius: 8px;
+    background-color: var(--form-background);
+    display: grid;
+}
+
+fieldset {
+    border: 1px solid var(--border-inner);
+    text-align: center;
+}
+
+legend {
+    margin-left: 10px;
+    padding: .6em;
+    color: navy;
+    font-size: 1.05em;
+}
+
+label, input, button, select, textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+input, select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-input);
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
+
+textarea {
+    width: 450px;
+    height: 75px;
+    margin: 20px 15px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    align-self: center;
+    border: 1px solid var(--border-input);
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 550px;
+    text-align: center;
+    font-size: .95rem;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    margin: 7px;
+}
+
+.column1 {
+    grid-template-columns: 2fr 1fr;
+    margin: 25px 5px 0px 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 7px 0;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+}

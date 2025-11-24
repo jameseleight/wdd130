@@ -1,0 +1,68 @@
+:root {
+    --header-background: rgb(0, 0, 0); /* Dark Background */
+    --row-background1: rgb(240, 240, 240); /* Light Background */
+    --row-background2: rgb(255, 255, 255); /* White Background */
+    --border-outer: rgb(120, 120, 120); /* dark grey border */
+    --border-inner: rgb(170, 170, 170); /* ligher grey inner border */
+    --heading-font: "Times New Roman", "Georgia", sans-serif;
+    --body-font: "Ariel", "Helvetica", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid var(--border-outer);
+    margin: 5px;
+}
+
+table caption {
+    caption-side: bottom;
+}
+
+tr:nth-child(even) {
+    background-color: var(--row-background1);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--row-background2);
+}
+
+td:hover {
+    background-color: lightblue;
+}
+
+th {
+    border: 1px solid var(--border-outer);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: .2px;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+td {
+    border: 1px solid var(--border-outer);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+thead th, tfoot th {
+    background-color: var(--header-background);
+    color: var(--row-background2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: small;
+    letter-spacing: 1px;
+    justify-items: center;
+    padding: 7px 15px;
+}

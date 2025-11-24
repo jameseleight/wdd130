@@ -1,0 +1,64 @@
+<!-- WDD 130
+Form Practice
+James Leight -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice on Forms</title>
+    <meta name="description" content="This is to practice making a Form">
+    <meta name="author" content="James Leight">
+    <link rel=" stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremial">Email:</label>
+                    <input type="email" id="useremial" name="useremial" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="1">Netscape</option>
+                        <option value="2">Mosaic</option>
+                        <option value="3">IE</option>
+                        <option value="4">Edge</option>
+                        <option value="5">Chrome</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4"
+                    placeholder="Chicago Illinois, New York New York, Los Angeles California"></textarea>
+            </fieldset>
+            <div class="button">
+                <button type="Submit">Submit Poll</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>©2025 | HTML Form - User Poll Activity | James Leight</p>
+    </footer>
+</body>
+
+</html>
