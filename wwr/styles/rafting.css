@@ -89,6 +89,7 @@ footer {
     grid-template-columns: 80% 20%;
     align-items: center;
     border-top: 2px var(--secondary-color) dashed;
+    margin: 10px auto;
 }
 
 footer nav {
@@ -359,7 +360,6 @@ button:hover {
     text-align: center;
     gap: 5px 5px;
     margin: 10px;
-    border-bottom: 2px var(--secondary-color) dashed;
 }
 
 .adventure h2 {
