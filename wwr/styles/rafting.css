@@ -7,11 +7,14 @@
     --primary-color-trans: rgb(12, 61, 12, .5); /* Dark Background transparent */
     --secondary-color: rgb(238, 174, 56); /* Light Background */
     --accent1-color: rgb(58, 59, 41); /* Dark Body text Color */
+    --accent1-color-trans: rgb(58, 59, 41, 50%); /* Dark Body text Color */
+    --button-homepage: hsl(83, 18%, 70%);
     --accent2-color: rgb(216, 207, 77); /* Light Body text Color */
     --heading-font: "Times New Roman", "Georgia", sans-serif;
     --body-font: Ariel, Helvetica, sans-serif;
-    --heading-font1: 
+    --heading-font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --contact-border: rgb(180, 180, 180); /* grey border */
+    --border-trans: rgb(230,230,230,10%);
 }
 
 * {
@@ -36,11 +39,12 @@ header {
     grid-template-columns: 1fr 4fr;
     align-items: center;
     justify-items: center;
-    border-bottom: 2px var(--secondary-color) dashed;
     background-color: var(--primary-color-trans);
+    border: 1px solid rgb(230, 230, 230, 10%);
     border-radius: 8px;
     width: 840px;
-    margin: 0 auto;
+    height: auto;
+    margin: 5px auto;
 }
 
 header nav {
@@ -58,7 +62,6 @@ header img {
 main, footer {
     width: 840px;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 
@@ -92,9 +95,10 @@ footer {
     display: grid;
     grid-template-columns: 80% 20%;
     align-items: center;
-    border-top: 2px var(--secondary-color) dashed;
-    margin: 10px auto;
+    margin: 5px auto;
+    padding: 0px 0 0 0 ;
     background-color: var(--primary-color-trans);
+    color: var(--accent1-color);
     border-radius: 8px;
 }
 
@@ -145,11 +149,35 @@ button {
     background-color: navy;
     color: #fff;
     border-radius: .5rem;
-    border: 1px solid rgb(180, 180, 180, 10%);
+    border: var(--border-trans);
 }
 
 button:hover {
     background-color: darkgreen;
+}
+
+th {
+    border: 1px solid var(--border-outer);
+    font-family: var(--heading-font1);
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: .2px;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+td {
+    border: 1px solid var(--border-outer);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+tr {
+    background-color: var(--accent2-color);
 }
 
 /* Class defintions */
@@ -179,6 +207,7 @@ button:hover {
 
 .hero-home {
     position: relative;
+    border: solid, 1px, var(--border-trans);
 }
 
 .hero-home img {
@@ -189,39 +218,146 @@ button:hover {
 
 .hero-home h1 {
     position: absolute;
-    top: 10px;
+    top: 7px;
     width: 100%;
     padding: 0px;
     text-align: center;
     color: var(--secondary-color);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--heading-font1);
     background-color: var(--primary-color-trans);
 }
 
 .hero-home p {
     position: absolute;
-    top: 45px;
+    top: 63px;
     width: 100%;
-    color: white;
+    padding: 0;
+    margin: 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color-trans);
     text-align: center;
 }
 
-.overall-experience p {
+.homea button {
+    position: absolute;
+    top: 90px;
+    background-color: var(--secondary-color);
+    border: var(--border-trans);
+    color: var(--accent1-color);
+    font-weight: 700;
+    width: 10%;
+    justify-self: right;
+    margin: 0 30% 0 0;
+}
+
+.homea button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.adventure-types {
+    display: grid;
+    grid-template-rows: 1fr .5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    justify-items: auto;
+    margin: 20px 0 100px 0;
+}
+
+.home-view img {
+    height: 170px;
+    width: auto;
+    border: 5px solid var(--accent1-color-trans);
+}
+
+.home-icon {
+    color: var(--primary-color);
+    text-align: center;
+    align-items: start;
+    opacity: 80%;
+}
+
+.home-icon img {
+    height: 50px;
+    width: auto;
+    opacity: 80%;
+}
+
+.overall-experience {
     position: relative;
+    width: 100%;
+    height: 430px;
+    background-color: var(--accent1-color-trans);
+    border-radius: 2px;
+    border: 1px solid var(--border-trans);
+    margin: 0 0 40px 0;
+}
+
+.overall-experience img {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 52%;
+    border: 1px solid var(--border-trans);
+    border-radius: 5px;
+}
+
+.overall-experience article {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: 47%;
+    height: 55%;
+    background-color: var(--accent1-color);
+    border-radius: 5px;
+}
+
+.overall-experience h2 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: var(--secondary-color);
+    padding: 20px 0;
+}
+
+.overall-experience p {
+    font-size: .75rem;
+    width: 70%;
+    justify-self: center;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 20px 0;
+    background: none;
+}
+
+.button-home {
+    position: absolute;
+    width: 60%;
+    top: 170px;
+    justify-self: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.button-home:hover {
+    background-color: red;
+    color: #fff;
+    font-weight: 900;
 }
 
 /* These are for the About Us Page */
 .hero {
     position: relative;
-    margin: 10px 0;
+    margin: 5px 0;
     border-bottom: 2px var(--secondary-color) dashed;
 }
 
 .hero h1 {
     position: absolute;
-    top: -365px;
+    top: -400px;
     width: 100%;
-    padding: 10px;
+    padding: 5px 0;
     text-align: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
@@ -231,19 +367,23 @@ button:hover {
     display: block;
     width: 100%;
     height: auto;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 5px 0px;
 }
 
 .hero article {
     position: absolute;
     margin: 0;
-    top: 380px;
-    width: 100%;
     padding: 0px;
+    top: 410px;
+    width: 100%;
     text-align: left;
     opacity: 0.8;
     background-color: var(--primary-color);
     color: var(--accent2-color);
+}
+
+.hero p {
+    margin: 8px 15px;
 }
 
 .hero article img {
@@ -260,13 +400,13 @@ button:hover {
     justify-items: center;
     text-align: left;
     gap: 0 5px;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     border-bottom: 2px var(--secondary-color) dashed;
 }
 
 .history p {
     width: 100%;
-    height: auto%;
+    height: auto;
     border-radius: 5px;
     grid-row-start: 2;
 }
@@ -280,7 +420,6 @@ button:hover {
 }
 
 .history h2 {
-    margin: 10px;
     grid-column-start: 2;
     place-self: center;
 }
@@ -292,7 +431,8 @@ button:hover {
     justify-items: center;
     text-align: center;
     gap: 5px 5px;
-    margin: 10px;
+    margin: 5px 0 0 0;
+    border-bottom: 2px var(--secondary-color) dashed;
 }
 
 .adventure h2 {
@@ -451,4 +591,50 @@ button:hover {
 
 .socialmedia {
     text-decoration: none;
+}
+
+/* These are for the Trips page */
+
+.adventure-trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 60px 0;
+}
+
+.trips-view {
+    color: var(--accent1-color);
+    font-size: .9rem;
+    width: 95%;
+    justify-self: center;
+}
+
+.trips-view img {
+    border: 5px solid var(--accent1-color-trans);
+}
+
+.trips-view figcaption {
+    margin: 10px;
+    text-align: left;
+}
+
+.trip-details {
+    margin: 10px 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    justify-items: center;
+    background-color: var(--accent1-color-trans);
+
+}
+
+.trip-details table {
+    border-collapse: collapse;
+    border: 2px solid var(--accent1-color);
+    margin: 10px;
+    background: none;
+}
+
+.trip-details caption {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
 }
