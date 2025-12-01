@@ -176,6 +176,13 @@ td {
     padding: 8px 15px;
 }
 
+tfoot td {
+    font-family: var(--heading-font1);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
 tr {
     background-color: var(--accent2-color);
 }
