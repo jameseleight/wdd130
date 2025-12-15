@@ -3,7 +3,7 @@
 
 :root {
     --border-color: #900;
-    --border-color2: darkblue;
+    --border-color2: rgb(0, 0, 139);
 }
 
 * {
